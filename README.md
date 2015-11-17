@@ -1,2 +1,2 @@
 # project3
-pintos Project 3
+pintos project 3
