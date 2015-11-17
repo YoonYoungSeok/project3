@@ -57,8 +57,9 @@ palloc_init (size_t user_page_limit)
   if (user_pages > user_page_limit)
     user_pages = user_page_limit;
   kernel_pages = free_pages - user_pages;
-
-    init_frame_table(kernel_pages);
+    
+    /* project 3 */
+    //init_frame_table(kernel_pages);
 
 
   /* Give half of memory to kernel, half to user. */

@@ -112,6 +112,10 @@ pagedir_set_page (uint32_t *pd, void *upage, void *kpage, bool writable)
     {
       ASSERT ((*pte & PTE_P) == 0);
       *pte = pte_create_user (kpage, writable);
+
+        /* project 3 */
+        //allocate_frame(pd, upage, kpage, writable);  
+
       return true;
     }
   else
