@@ -11,5 +11,5 @@ void init_frame_table(size_t pages)
     
     list_init(&frame_table.frames);
 
-
+}
 
